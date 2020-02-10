@@ -240,6 +240,3 @@ ro.location.osnlp.package=com.google.android.gms
 ro.location.osnlp.region.package=
 
 #
-
-# LCD density
-ro.sf.lcd_density=440
