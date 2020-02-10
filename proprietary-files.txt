@@ -124,12 +124,16 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.msm8953.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.msm8953.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
@@ -279,6 +283,7 @@ vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 vendor/lib/hw/camera.msm8953.so
 vendor/lib/libbase64.so
 vendor/lib/libcamera_core_hwi.so
+vendor/lib/libcamhidlsensor.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libcvface_api.so
@@ -2262,14 +2267,18 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
+vendor/etc/init/android.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
+vendor/lib/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib/hw/thermal.msm8953.so
 -vendor/lib/libthermalclient.so
+vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib64/hw/thermal.msm8953.so
 -vendor/lib64/libthermalclient.so
 
 # Thermal-Hardware
-vendor/lib/hw/thermal.msm8953.so
-vendor/lib64/hw/thermal.msm8953.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -2477,7 +2486,6 @@ vendor/lib/libavcodec_vendor.so
 vendor/lib/libavformat_vendor.so
 vendor/lib/libavutil_vendor.so
 vendor/lib/libblur_channel.so
-vendor/lib/libcamhidlsensor.so
 vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/libcpp_offline_pproc.so
 vendor/lib/libdiagbridge.so
